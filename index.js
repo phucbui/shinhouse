@@ -19,6 +19,9 @@ var upload = multer({ storage: storage }).single('uploadfile');
 app.use(express.static("public"));
 app.set("view engine", "ejs");
 app.set("views", "./views");
+
+var port = process.env.PORT || 3000;
+
 app.listen(3000);
 
 var config = require('./config/database.js');
