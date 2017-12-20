@@ -22,7 +22,7 @@ app.set("views", "./views");
 
 var port = process.env.PORT || 3000;
 
-app.listen(3000);
+app.listen(port);
 
 var config = require('./config/database.js');
 
